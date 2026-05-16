@@ -327,3 +327,29 @@ Benefits:
 - retry support
 - scalability
 - faster processing
+# Stage 6
+
+# Priority Inbox Implementation
+
+Priority inbox displays the most important unread notifications.
+
+Priority order:
+- Placement
+- Result
+- Event
+
+Weights assigned:
+- Placement = 3
+- Result = 2
+- Event = 1
+
+Notifications are:
+1. filtered for unread items
+2. sorted by priority weight
+3. sorted by recency
+4. top notifications displayed
+
+Python implementation is provided in:
+`priority_inbox.py`
+
+The algorithm efficiently maintains the top notifications by sorting only unread notifications.
